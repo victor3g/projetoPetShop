@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Formulario de Contato</title>
-        <link rel="stylesheet" type="text/css" href="contato.css">
-    </head>
-    <body>
-        <h1>Formulario de Contato do Petshop</h1>
-        <form action="/submit_form" method="post">
-            <label for="Nome">Nome:</label><br>
-            <input type="text" id="nome" name="nome"><br>
-            <label for="Email">Email:</label><br>
-            <input type="text" id="email" name="email"><br>
-            <label for="Mensagem">Mensagem:</label><br>
-            <textarea  id="mensagem" name="mensagem"></textarea><br>
-            <input type="submit" value="Enviar">
-        </form>
-    </body>
+<head>
+    <title>Contato Petshop</title>
+    <link rel="stylesheet" type="text/css" href="contato.css">
+</head>
+<body>
+    <h1>Formulário de Contato do Petshop</h1>
+    <form action="/submit_form" method="post">
+        <label for="nome">Nome:</label><br>
+        <input type="text" id="nome" name="nome"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" id="telefone" name="telefone"><br>
+        <label for="endereco">Endereço:</label><br>
+        <input type="text" id="endereco" name="endereco"><br>
+        <label for="animal">Tipo de Animal:</label><br>
+        <select id="animal" name="animal">
+            <option value="cachorro">Cachorro</option>
+            <option value="gato">Gato</option>
+            <option value="outro">Outro</option>
+        </select><br>
+        <label for="data_hora">Data e Hora para Agendamento:</label><br>
+        <input type="datetime-local" id="data_hora" name="data_hora"><br>
+        <label for="mensagem">Mensagem:</label><br>
+        <textarea id="mensagem" name="mensagem"></textarea><br>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
 </html>
