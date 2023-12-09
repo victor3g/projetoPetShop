@@ -2,12 +2,13 @@ body {
     font-family: Arial, sans-serif;
 }
 #menu-button {
+    background-color: #333;
     font-size: 30px;
     cursor: pointer;
 }
 
 nav {
-    background-color: #fff;
+    background-color: #333;
     padding: 10px;
 }
 nav ul {
