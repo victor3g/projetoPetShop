@@ -5,16 +5,13 @@ body {
     background-color: #f4f4f4; /* Cor de fundo do corpo */
 }
 #menu-button {
-    #menu-button {
-        font-size: 30px;
-        cursor: pointer;
-        color: #fff; /* Cor do texto do botão */
-        background-color: #333; /* Cor de fundo do botão */
-        position: absolute; /* Posicionamento absoluto */
-        top: 0; /* No topo da página */
-        right: 0; /* À direita da página */
-    }
-    
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff; /* Cor do texto do botão */
+    background-color: #333; /* Cor de fundo do botão */
+    position: absolute; /* Posicionamento absoluto */
+    top: 0; /* No topo da página */
+    left: 0; /* À esquerda da página */
 }
 nav {
     background-color: #333; /* Cor de fundo do menu */
@@ -39,8 +36,9 @@ nav li a:hover {
     background-color: #ddd; /* Cor de fundo dos links do menu ao passar o mouse */
 }
 h1 {
-    color: #3399FF;
+    color: #fff;
     text-align: center;
+    background-color: #000000; /* Cor de fundo do título */
 }
 form {
     max-width: 800px;
@@ -63,7 +61,7 @@ input[type="text"], input[type="email"], input[type="tel"], textarea, select, in
     box-sizing: border-box;
 }
 input[type="submit"] {
-    background-color: #3399FF;
+    background-color: #333;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -72,5 +70,5 @@ input[type="submit"] {
     margin-top: 20px;
 }
 input[type="submit"]:hover {
-    background-color: #2166CC;
+    background-color: #333;
 }
