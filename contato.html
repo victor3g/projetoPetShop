@@ -5,11 +5,12 @@
     <link rel="stylesheet" type="text/css" href="contato.css">
 </head>
 <body>
-    <nav>
+    <button onclick="toggleMenu()" id="menu-button">☰ Menu</button>
+    <nav id="menu" style="display: none;">
         <ul>
             <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="index.html">Menu</a></li>
-            <li><a href="servico.html">Serviços</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="servicos.html">Serviços</a></li>
         </ul>
     </nav>
     <h1>Formulário de Contato do Petshop</h1>
@@ -34,5 +35,15 @@
         <textarea id="mensagem" name="mensagem"></textarea><br>
         <input type="submit" value="Enviar">
     </form>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display === "none") {
+                menu.style.display = "block";
+            } else {
+                menu.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
